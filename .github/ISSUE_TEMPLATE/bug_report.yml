@@ -1,0 +1,38 @@
+name: Bug report
+description: AFKage stopped, or did something wrong.
+title: "Bug: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Your player name and User ID show on some game screens. Crop or blur them before you post a screenshot.
+  - type: input
+    id: version
+    attributes:
+      label: AFKage version
+      description: It's in AFKage, under Settings > About.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What were you running, what did AFKage say, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: window
+    attributes:
+      label: Screenshot of the AFKage window
+      description: Paste or drag it in here.
+    validations:
+      required: true
+  - type: textarea
+    id: game
+    attributes:
+      label: Screenshot of the game screen it stopped on
+      description: Paste or drag it in here. If it saved the screen for you, use that one.
+    validations:
+      required: true

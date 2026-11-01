@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Help and suggestions
+    url: https://github.com/afkage/AFKage/discussions
+    about: Ask a question or suggest something in Discussions.
