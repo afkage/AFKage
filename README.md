@@ -1,16 +1,16 @@
-<p align="center"><img src="images/logo.png" alt="AFKage logo" width="160"></p>
+<p align="center"><img src="images/logo.png" alt="AFKage logo: the free auto-farm bot for Naruto Blazing Revival" width="160"></p>
 
-# AFKage
+# AFKage — free auto-farm bot for Naruto Blazing Revival
+
+AFKage is a free Naruto Blazing bot for Windows that auto farms Naruto Blazing Revival in BlueStacks.
+
+Set up a To-Do list, press **Run** and go do something else. It farms Emergency Missions, Trials and Story, clears your Daily Missions, waits out stamina, and carries on through the daily reset and maintenance. If it sees a screen it doesn't know, it stops without tapping and tells you why.
 
 > AFKage is a free, unofficial fan tool. It is not made by or affiliated with the Naruto Blazing Revival team, Bandai Namco or GREE. It only reads screenshots of the game and taps through ADB, like a person would. It does not inject code, modify the game, read memory or need root. Use at your own risk and respect the revival's rules.
 
 **[Download AFKage](../../releases/latest)** · [Report a bug](../../issues/new/choose) · [Get help or suggest something](../../discussions)
 
-## What AFKage does
-
-AFKage plays the Naruto Blazing revival for you in BlueStacks 5, from a To-Do list you set up. Add tasks, press **Run**, and go do something else. It farms stages, finishes your Daily Missions, waits out stamina, and carries on through the daily reset and maintenance. If it sees a screen it doesn't know, it stops without tapping and tells you why.
-
-![The AFKage window, playing a To-Do list](images/todo.png)
+![The AFKage window auto farming Naruto Blazing: a To-Do list of farm, Limit Break, Story push and Daily tasks, with the battle under way](images/todo.png)
 
 ## Features
 
@@ -73,7 +73,7 @@ AFKage plays the Naruto Blazing revival for you in BlueStacks 5, from a To-Do li
 - New game data arrives by itself every few hours, and goes live between runs, never during a battle.
 - Every update is signed, and AFKage refuses any that doesn't verify.
 
-## Install
+## Install on BlueStacks
 
 You need Windows 10 or 11, and BlueStacks 5 with the game installed.
 
@@ -107,14 +107,14 @@ AFKage opens its own window and walks you through three steps. It doesn't tap an
 3. If ADB is off or the size is wrong, AFKage says what to do. Fix that and press **Check** again.
 4. Press **Next**.
 
-![The first setup step: connecting to BlueStacks](images/setup-bluestacks.png)
+![First setup step: connecting AFKage to BlueStacks 5 through its ADB address](images/setup-bluestacks.png)
 
 **Your teams**
 
 1. Pick the team you use for each element, as numbered on the game's Select Team screen. Limit Break tasks and Getting Rich Quick use these.
 2. Press **Next**.
 
-![The second setup step: a team for each element](images/setup-teams.png)
+![Second setup step: choosing a Naruto Blazing team for each element](images/setup-teams.png)
 
 **Screen check**
 
@@ -123,7 +123,7 @@ AFKage opens its own window and walks you through three steps. It doesn't tap an
 3. If AFKage recognises the screen, press **Finish**.
 4. If it doesn't, your game may be a different version. Press **Save this screen**, then **Report a bug**. AFKage won't tap anything in the meantime.
 
-![The third setup step: the screen check](images/setup-check.png)
+![Third setup step: AFKage checking it recognises the game's main screen](images/setup-check.png)
 
 ### Step 4: Your first task
 
@@ -132,7 +132,7 @@ AFKage opens its own window and walks you through three steps. It doesn't tap an
 3. Press **Add to list**.
 4. Press **Run**.
 
-## Using AFKage
+## How to auto farm Naruto Blazing
 
 ### The To-Do tab
 
@@ -148,25 +148,25 @@ Press **Add task** and choose a type. A new task starts with the settings you us
 
 Choose Emergency, Trials or Story. For Story, pick Normal or Hard and type the stage and chapter, like `20-3`.
 
-![Adding a Farm a stage task](images/add-task.png)
+![Adding a Farm a stage task: picking an Emergency Mission, Trial or Story stage, runs and team](images/add-task.png)
 
 **Limit Break**
 
 Choose an element. The team, Copy Captain and boss skill come from **Settings**, and it always plays the hardest difficulty shown. Tick **Start this element's counts again from 0** to start a new limit break.
 
-![Adding a Limit Break task](images/add-limit-break.png)
+![Adding a Limit Break task that farms one element's limit break materials](images/add-limit-break.png)
 
 **Story push**
 
 Pick the team and battle settings. It stops by itself when everything is cleared.
 
-![Adding a Story push task](images/add-story-push.png)
+![Adding a Story push task that clears Story, Story Hard, Gaiden and Gaiden Hard](images/add-story-push.png)
 
 **Daily**
 
 The Daily task goes to the top of the list. Emergency and Story runs always use Copy Captain, and the Trial uses the Daily Trial in **Settings**.
 
-![Adding a Daily task](images/add-daily.png)
+![Adding a Daily task for the Naruto Blazing Daily Missions](images/add-daily.png)
 
 ### Pill and pearl caps
 
@@ -193,24 +193,24 @@ The bar shows the whole list's progress and its finish time, worked out from you
 
 | Naruto | What it means |
 | --- | --- |
-| <img src="images/naruto-run.gif" alt="Naruto running" height="64"> | Playing a battle. |
-| <img src="images/naruto-stance.gif" alt="Naruto standing still" height="64"> | Waiting or stopped, with a zzz above him. |
+| <img src="images/naruto-run.gif" alt="Naruto sprite running: a battle is being played" height="64"> | Playing a battle. |
+| <img src="images/naruto-stance.gif" alt="Naruto sprite standing still: waiting or stopped" height="64"> | Waiting or stopped, with a zzz above him. |
 
 ### Waiting for stamina
 
 When there isn't enough stamina, the task shows **Waiting for stamina** and the right side says when it'll be back.
 
-![AFKage waiting for stamina](images/waiting.png)
+![AFKage waiting for stamina, with the time it will carry on](images/waiting.png)
 
 ### When it stops
 
 The right side says what happened and what to do next. Your list and every task's progress are saved. Fix what it says, then press **Run**.
 
-![AFKage stopped, with the reason shown](images/stopped.png)
+![AFKage stopped, with a plain reason and what to do next](images/stopped.png)
 
 ### Settings
 
-![The Settings tab](images/settings.png)
+![The AFKage Settings tab: BlueStacks connection, team per element, sounds, Daily Trial and updates](images/settings.png)
 
 - **BlueStacks:** the ADB address, and a connection test. If the address refuses, AFKage tries 5555, 5556 and 5565, and uses the one showing the game. With two BlueStacks instances, copy the address from BlueStacks **Settings > Advanced**.
 - **Team per element:** the team, Copy Captain, boss skill and Trial that Limit Break tasks use. Getting Rich Quick uses the element's team.
@@ -221,7 +221,7 @@ The right side says what happened and what to do next. Your list and every task'
 
 ### Updates
 
-![An update offer and What's new notes in the window](images/update.png)
+![An AFKage update offer with its What's new notes](images/update.png)
 
 - **A new AFKage:** the window asks first. Press **Update** and it replaces itself and restarts. Stop the list first. **Later** asks again the next time AFKage starts.
 - **New game data:** new stages and game patches arrive with no new download.
@@ -300,6 +300,6 @@ Your player name and User ID show on some game screens, so crop or blur them fir
 
 ## Support AFKage
 
-<a href="https://www.buymeacoffee.com/afkage" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+<a href="https://www.buymeacoffee.com/afkage" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Support AFKage on Buy Me a Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 AFKage is free to download and use, but all rights are reserved. See [LICENSE](LICENSE).
