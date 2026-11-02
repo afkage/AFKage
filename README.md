@@ -1,8 +1,8 @@
-<p align="center"><img src="images/logo.png" alt="AFKage logo: the free auto-farm bot for Naruto Blazing Revival" width="160"></p>
+<p align="center"><img src="images/logo.png" alt="AFKage logo: the free auto-farm app for Naruto Blazing Revival" width="160"></p>
 
-# AFKage — free auto-farm bot for Naruto Blazing Revival
+# AFKage — free auto-farm app for Naruto Blazing Revival
 
-AFKage is a free Naruto Blazing bot for Windows that auto farms Naruto Blazing Revival in BlueStacks.
+AFKage is a free Naruto Blazing app for Windows that auto farms Naruto Blazing Revival in BlueStacks.
 
 Set up a To-Do list, press **Run** and go do something else. It farms Emergency Missions, Trials and Story, clears your Daily Missions, waits out stamina, and carries on through the daily reset and maintenance. If it sees a screen it doesn't know, it stops without tapping and tells you why.
 
@@ -227,7 +227,7 @@ The right side says what happened and what to do next. Your list and every task'
 - **New game data:** new stages and game patches arrive with no new download.
 - **Each update** shows short What's new notes.
 - **Bad game data:** if an update stops AFKage recognising the game, press **Roll back game data** in **Settings**.
-- **Stages that leave the game:** a task for one shows "This stage is no longer in the game" and is skipped. The rest of the list carries on.
+- **Events that end:** a task shows when its event ends, such as **Ends in 4 days**. Once it has ended and its banner is gone, the task is skipped and the rest of the list carries on, with no update needed.
 
 ## Roadmap
 
