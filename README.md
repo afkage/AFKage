@@ -4,7 +4,7 @@
 
 AFKage is a free Naruto Blazing app for Windows that auto farms Naruto Blazing Revival in BlueStacks.
 
-Set up a To-Do list, press **Run** and go do something else. It farms Emergency Missions, Trials and Story, clears your Daily Missions, waits out stamina, and carries on through the daily reset and maintenance. If it sees a screen it doesn't know, it stops without tapping and tells you why.
+Set up a To-Do list, press **Run** and go do something else. It farms Emergency Missions, Trials, Story and Ninja Road, clears your Daily Missions, waits out stamina, and carries on through the daily reset and maintenance. If it sees a screen it doesn't know, it stops without tapping and tells you why.
 
 > AFKage is a free, unofficial fan tool. It is not made by or affiliated with the Naruto Blazing Revival team, Bandai Namco or GREE. It only reads screenshots of the game and taps through ADB, like a person would. It does not inject code, modify the game, read memory or need root. Use at your own risk and respect the revival's rules.
 
@@ -27,6 +27,7 @@ Set up a To-Do list, press **Run** and go do something else. It farms Emergency 
 - **Limit Break:** farms one element's materials in order: Getting Rich Quick, Scrolls, Ramen, then Trials.
 - **Story push:** clears everything not cleared yet: Story, Story Hard, Gaiden, then Gaiden Hard.
 - **Daily:** the Daily Missions, once a game day.
+- **Ninja Road:** plays the Road map by map with your three Ninja Road teams, a plan per map, Retreat and claim at the end, and the next Road after that. See [Ninja Road](#ninja-road).
 
 ### Task settings
 
@@ -64,7 +65,7 @@ Set up a To-Do list, press **Run** and go do something else. It farms Emergency 
 - It only reads screenshots and taps through ADB.
 - Every tap follows the same pattern: check the screen, tap, then check the result.
 - On a screen it doesn't know, it stops without tapping, says why, and saves the screen for a bug report.
-- It stops after 3 losses in a row.
+- It stops after 3 losses in a row. On Ninja Road, a wipe ends the Road and the next one starts; it stops when 3 Roads in a row are wiped before map 5.
 - It stops if BlueStacks stops answering, or if a tap doesn't do what it should.
 
 ### Automatic updates
@@ -168,6 +169,50 @@ The Daily task goes to the top of the list. Emergency and Story runs always use 
 
 ![Adding a Daily task for the Naruto Blazing Daily Missions](images/add-daily.png)
 
+**Ninja Road**
+
+See [Ninja Road](#ninja-road) below.
+
+### Ninja Road
+
+The Ninja Road task plays the Road map by map. Before every map it reads the map number on the Ready screen, swipes the team bar to the team your plan names, sets Auto, Ninjutsu and Secret Techniques the way the map's row says, and taps Ready!!. A wiped team is swapped for the next alive one. After the last map you asked for it retreats, claims the rewards, and starts the next Road if you asked for more.
+
+![Adding a Ninja Road task: maps to play, the Every map row, Changed maps, the When the team is wiped row, and the number of Roads](images/add-ninja-road.png)
+
+**Setting it up**
+
+1. Press **Add task** and choose **Ninja Road**.
+2. **Maps to play:** such as `1-15`. Maps in a gap, like `1-10, 12-15`, are yours: the task stops for you to play them, then press **Run**.
+3. **Every map:** the row every map uses. **Team** 1, 2 or 3; **Auto** on, or by hand for a map you play yourself; **Secret Techniques** and **Ninjutsu** left as the game has them, off, at boss, or all maps.
+4. **Changed maps:** press **Change a map**, type the map number, and set only what's different on that map. Anything left blank comes from the Every map row.
+5. **When the team is wiped:** the team and buttons that take over for the rest of the Road once the row's team is gone. Leave the team blank for the next alive team in 1, 2, 3 order.
+6. **After the last map:** **Retreat and claim**, or **Stop for manual play** if you want to carry on by hand.
+7. **Roads:** a number, or tick **Until stopped**. Each new Road waits for stamina like any other task, and pills and pearls only go within the caps.
+8. Press **Add to list**.
+
+![A Ninja Road task running, with its card showing the Road, the map and the team](images/ninja-road.png)
+
+**How the teams work**
+
+- The teams are the game's three Ninja Road teams, the ones Team Setup lists. There's nothing to set up in AFKage.
+- A new Road opens on Team 1. At its first map AFKage swipes through the bar once and remembers each team by its faces, then finds the team each map wants by those faces, however the Road has gone. If two teams look the same it stops and says so.
+- After a restart it matches the teams it remembered for that Road. If it can't, it asks you to swipe the bar to Team 1 and press **Run**.
+
+**How a Road ends**
+
+- After the last map you asked for, it taps **Retreat**, confirms, and taps through the results pages. The map rewards are kept.
+- A wipe ends the Road too: it taps **OK** on "All teams defeated", claims the rewards from the maps it cleared, and logs how far it got, such as **Road 2 ended at map 13 (all teams wiped)**. If Roads remain, the next one starts.
+- If 3 Roads in a row are wiped before map 5, it stops: "The team keeps losing early on Ninja Road. Check the team, then start again."
+- The card shows where it is and how the last Road ended, such as **Road 3 of 10 · last ended map 13 (wiped) · Map 1 of 15 · Team 1**.
+
+![The end of a Road in the log: the rewards claimed, how the Road ended, and the next Road starting](images/ninja-road-end.png)
+
+**A good setup to start with**
+
+One strong team, **Auto** on, **Ninjutsu** on all maps, maps `1-15`, **Retreat and claim**, and **Until stopped**. The pictures above use that setup, with 10 Roads. Add changed maps once you know where that team needs Secret Techniques, or a different team.
+
+**Maps 16 to 20** need manual play for now: the game's Auto doesn't get through them. Leave them out of the maps to play, or set **Stop for manual play** and finish the Road yourself. Playing them for you is on the [roadmap](#v2-custom-manual).
+
 ### Pill and pearl caps
 
 - The caps are for the whole task, so starting the list again never gives it more.
@@ -233,7 +278,8 @@ The right side says what happened and what to do next. Your list and every task'
 
 ### v1.1: battle plans
 
-- **A plan per map:** set Map 1, Map 2, Map 3 and Boss to off, Ninjutsu, Ninjutsu once, or Secret Technique.
+- **Ninja Road** is in: maps 1 to 15 on Auto, a plan per map, three teams told apart by their faces, Retreat and claim, and Road after Road.
+- **A plan per map** for every task type: set Map 1, Map 2, Map 3 and Boss to off, Ninjutsu, Ninjutsu once, or Secret Technique.
 - **Battle speed per task:** x1 to x4.
 
 ### v1.2
@@ -243,7 +289,7 @@ The right side says what happened and what to do next. Your list and every task'
 
 ### v2: Custom Manual
 
-For Hard S, Impact and event stages, which the game's Auto can't clear well. AFKage learns to read the battle first, then plays it from your own recording.
+For Hard S, Impact, event stages and Ninja Road maps 16 to 20, which the game's Auto can't clear well. AFKage learns to read the battle first, then plays it from your own recording.
 
 - **Record your own run:** play it once, and AFKage turns your touches into steps tied to the battle.
 - **Replay it safely:** each step runs only when its moment shows, and AFKage stops if the battle goes differently.
@@ -280,6 +326,9 @@ Yes. The list keeps running. Open AFKage again to see it.
 
 **Can I play the game while a list runs?**
 No. AFKage needs the game to itself. Press **Stop** first.
+
+**Why did my Ninja Road end at map 13?**
+Every team was wiped there, so the game closed the Road. AFKage claimed the rewards from the maps it cleared, logged **Road 2 ended at map 13 (all teams wiped)**, and started the next Road if you asked for more. Maps past 12 or so need a stronger team or manual play, so set the maps to play to what your team clears, and leave the later ones out until the roadmap's Custom Manual gets there.
 
 **How do I remove AFKage?**
 Delete `AFKage.exe`, then delete the `%LOCALAPPDATA%\AFKage` folder.
