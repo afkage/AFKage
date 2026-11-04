@@ -137,7 +137,8 @@ AFKage opens its own window and walks you through three steps. It doesn't tap an
 
 ### The To-Do tab
 
-- **The left side** is your list. The pencil edits a task and the cross removes it. Drag the dots on the left to move a task.
+- **The left side** is your list. The pencil edits a task, the circular arrow resets its progress and the cross removes it. Drag the dots on the left to move a task.
+- **Reset progress** asks first, then puts the task back to its start: a farm to 0 runs, a Story push to 0 chapters, a Limit Break's counts to 0, Ninja Road to Road 1 and its first map (the saved team looks are forgotten too), and the Daily to not started today, so it runs again (it still reads the mission list, so nothing that's already MAX is played again). The pills and pearls a task used stay counted. The task that's playing right now can't be reset: press **Stop** first.
 - **The right side** shows what AFKage is doing now, your stamina, the pills and pearls used, and the latest steps. Tick **Show every tap** to see each one.
 - **Finished** tasks move to the bottom of the list, with the time they ended.
 
@@ -203,6 +204,7 @@ The Ninja Road task plays the Road map by map. Before every map it reads the map
 - After the last map you asked for, it taps **Retreat**, confirms, and taps through the results pages. The map rewards are kept.
 - A wipe ends the Road too: it taps **OK** on "All teams defeated", claims the rewards from the maps it cleared, and logs how far it got, such as **Road 2 ended at map 13 (all teams wiped)**. If Roads remain, the next one starts.
 - If 3 Roads in a row are wiped before map 5, it stops: "The team keeps losing early on Ninja Road. Check the team, then start again."
+- The daily reset ends every Road. If a task was part way through one, the next time it opens Ninja Road it logs **The previous Road ended (probably the daily reset). Starting a new one**, and starts again from its first map.
 - The card shows where it is and how the last Road ended, such as **Road 3 of 10 · last ended map 13 (wiped) · Map 1 of 15 · Team 1**.
 
 ![The end of a Road in the log: the rewards claimed, how the Road ended, and the next Road starting](images/ninja-road-end.png)
