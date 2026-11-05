@@ -69,7 +69,7 @@ Set up a To-Do list, press **Run** and go do something else. It farms Emergency 
 - It only reads screenshots and taps through ADB.
 - Every tap follows the same pattern: check the screen, tap, then check the result.
 - On a screen it doesn't know, it stops without tapping, says why, and saves the screen for a bug report.
-- It stops after 3 losses in a row. On Ninja Road, a wipe ends the Road and the next one starts; it stops when 3 Roads in a row are wiped before map 5.
+- After 3 losses in a row it sets that task aside and carries on with the rest of the list. On Ninja Road, a wipe ends the Road and the next one starts, and 3 Roads in a row wiped before map 5 set the Ninja Road task aside. See [When a task keeps losing](#when-a-task-keeps-losing).
 - It stops if BlueStacks stops answering, or if a tap doesn't do what it should.
 
 ### Automatic updates
@@ -208,7 +208,7 @@ The Ninja Road task plays the Road map by map. Before every map it reads the map
 
 - After the last map you asked for, it taps **Retreat**, confirms, and taps through the results pages. The map rewards are kept.
 - A wipe ends the Road too: it taps **OK** on "All teams defeated", claims the rewards from the maps it cleared, and logs how far it got, such as **Road 2 ended at map 13 (all teams wiped)**. If Roads remain, the next one starts.
-- If 3 Roads in a row are wiped before map 5, it stops: "The team keeps losing early on Ninja Road. Check the team, then start again."
+- If 3 Roads in a row are wiped before map 5, the task is set aside: "Set aside after 3 Roads in a row wiped before map 5. Check the team, then press Retry on the card." The rest of the list carries on, and the next Road is ready for when it comes back.
 - The daily reset ends every Road. If a task was part way through one, the next time it opens Ninja Road it logs **The previous Road ended (probably the daily reset). Starting a new one**, and starts again from its first map.
 - The card shows where it is and how the last Road ended, such as **Road 3 of 10 · last ended map 13 (wiped) · Map 1 of 15 · Team 1**.
 
@@ -253,6 +253,15 @@ The bar shows the whole list's progress and its finish time, worked out from you
 When there isn't enough stamina, the task shows **Waiting for stamina** and the right side says when it'll be back.
 
 ![AFKage waiting for stamina, with the time it will carry on](images/waiting.png)
+
+### When a task keeps losing
+
+After 3 losses in a row, AFKage sets that task aside and carries on with the rest of the list. The card goes grey and says why, such as "Set aside after 3 losses in a row on Story Hard · top chapter. Try a stronger team, then press Retry on the card."
+
+- **Retry** on the card puts the task back on the list straight away. **Reset progress** is a separate button and doesn't clear it.
+- After the daily reset the task comes back by itself and gets another go. If it loses 3 more times, it's set aside again until the next reset.
+- A set-aside task stays aside if you stop the list or restart AFKage.
+- The list only stops when every task left is set aside, with a summary of each reason. If the rest are locked, it waits for them, or for the daily reset.
 
 ### When it stops
 
