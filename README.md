@@ -35,9 +35,13 @@ Set up a To-Do list, press **Run** and go do something else. It farms Emergency 
 - **Runs:** a number, or until you stop it.
 - **Team:** 1 to 15, or Any for whichever team is selected in the game.
 - **Copy Captain:** on or off.
-- **Secret Techniques:** off, at boss, or all maps.
-- **Ninjutsu:** off, at boss, or all maps.
+- **Secret Techniques:** off, at boss, all maps, or once.
+- **Ninjutsu:** off, at boss, all maps, or once.
+- **Changed maps:** a different Secret Techniques or Ninjutsu setting on one map, such as Ninjutsu once on map 2. Press **Change a map**, type the map number and set only what's different; anything left blank is the task's own setting.
+- **Speed:** the game's, or x1 to x4. The editor recommends one for the plan: x4 when AFKage only waits for the result, x3 with a button at boss, x2 with a once or a changed map, so it has time to see each cast.
 - **Stamina pill cap and Ninja Pearl cap:** both start at 0, which means off.
+
+**At boss** switches the button on when the Boss HP bar shows. **Once** switches it on at the start of the map and off again when every front unit has cast, so a team uses its jutsu one time on that map and saves its chakra. The game's Auto plays Secret Techniques before Ninjutsu, so a map with both on would never use Ninjutsu: AFKage refuses that row and asks you to turn one off.
 
 ### Daily Missions
 
@@ -184,12 +188,13 @@ The Ninja Road task plays the Road map by map. Before every map it reads the map
 
 1. Press **Add task** and choose **Ninja Road**.
 2. **Maps to play:** such as `1-15`. Maps in a gap, like `1-10, 12-15`, are yours: the task stops for you to play them, then press **Run**.
-3. **Every map:** the row every map uses. **Team** 1, 2 or 3; **Auto** on, or by hand for a map you play yourself; **Secret Techniques** and **Ninjutsu** left as the game has them, off, at boss, or all maps.
+3. **Every map:** the row every map uses. **Team** 1, 2 or 3; **Auto** on, or by hand for a map you play yourself; **Secret Techniques** and **Ninjutsu** left as the game has them, off, at boss, all maps, or once (on at the start of the map, off again when every unit in the team has cast).
 4. **Changed maps:** press **Change a map**, type the map number, and set only what's different on that map. Anything left blank comes from the Every map row.
 5. **When the team is wiped:** the team and buttons that take over for the rest of the Road once the row's team is gone. Leave the team blank for the next alive team in 1, 2, 3 order.
 6. **After the last map:** **Retreat and claim**, or **Stop for manual play** if you want to carry on by hand.
 7. **Roads:** a number, or tick **Until stopped**. Each new Road waits for stamina like any other task, and pills and pearls only go within the caps.
-8. Press **Add to list**.
+8. **Speed:** the game's, or x1 to x4. x2 is recommended on the Road, so AFKage has time to read each map and see each cast.
+9. Press **Add to list**.
 
 ![A Ninja Road task running, with its card showing the Road, the map and the team](images/ninja-road.png)
 
@@ -278,11 +283,12 @@ The right side says what happened and what to do next. Your list and every task'
 
 ## Roadmap
 
-### v1.1: battle plans
+### v1.1: battle plans (out)
 
 - **Ninja Road** is in: maps 1 to 15 on Auto, a plan per map, three teams told apart by their faces, Retreat and claim, and Road after Road.
-- **A plan per map** for every task type: set Map 1, Map 2, Map 3 and Boss to off, Ninjutsu, Ninjutsu once, or Secret Technique.
-- **Battle speed per task:** x1 to x4.
+- **A plan per map** for every task type is in: Changed maps set Secret Techniques or Ninjutsu to off, at boss, all maps or once on one map.
+- **Battle speed per task** is in: x1 to x4, with a recommendation for the plan.
+- **Reset progress** on every card is in.
 
 ### v1.2
 
