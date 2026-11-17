@@ -4,7 +4,7 @@
 
 AFKage is a free Naruto Blazing app for Windows that auto farms Naruto Blazing Revival in BlueStacks.
 
-Set up a To-Do list, press **Run** and go do something else. It farms Emergency Missions, Trials, Story and Ninja Road, clears your Daily Missions, waits out stamina, and carries on through the daily reset and maintenance. If it sees a screen it doesn't know, it stops without tapping and tells you why.
+Set up a To-Do list, press **Run** and go do something else. It farms Emergency Missions, Trials, Story and Ninja Road, plays your Phantom Castle stamina, clears your Daily Missions, waits out stamina, and carries on through the daily reset and maintenance. If it sees a screen it doesn't know, it stops without tapping and tells you why.
 
 > AFKage is a free, unofficial fan tool. It is not made by or affiliated with the Naruto Blazing Revival team, Bandai Namco or GREE. It only reads screenshots of the game and taps through ADB, like a person would. It does not inject code, modify the game, read memory or need root. Use at your own risk and respect the revival's rules.
 
@@ -63,6 +63,13 @@ Set up a To-Do list, press **Run** and go do something else. It farms Emergency 
 - Pills and pearls are used only when you turn them on, and never above your caps.
 - Pills always go before pearls.
 - If it doesn't know a stage's cost, it tries. If the game says there isn't enough stamina, it taps **No** and waits.
+
+### Phantom Castle
+
+- Turn on **Do Phantom Castle** and the list plays your Phantom Castle stamina between runs, so it never sits full.
+- It goes when about 3 stamina has built up, and right after a Ninja Rank up refills it.
+- It fights the opponent with the most Points, with Auto on, Ninjutsu on and Secret Techniques off.
+- Ninja Pearls refill it only when you turn them on, up to your caps. See [Phantom Castle](#phantom-castle-1).
 
 ### Safety stops
 
@@ -220,6 +227,23 @@ One strong team, **Auto** on, **Ninjutsu** on all maps, maps `1-15`, **Retreat a
 
 **Maps 16 to 20** need manual play for now: the game's Auto doesn't get through them. Leave them out of the maps to play, or set **Stop for manual play** and finish the Road yourself. Playing them for you is on the [roadmap](#v2-custom-manual).
 
+### Phantom Castle
+
+The **Phantom Castle** panel is on the right side of the To-Do tab, under the pills and pearls.
+
+1. Turn on **Do Phantom Castle**.
+2. To refill with Ninja Pearls, turn on **Use Ninja Pearls for refills**, then set how many it may use **each visit**, and **at most each time the list runs**. With it off, it never spends a pearl on Phantom Castle.
+3. Press **Run**. You can turn it on or off while the list runs.
+
+How it works:
+
+- Phantom Castle stamina comes back 1 every 30 minutes, up to 5. AFKage works out how much has built up, and between runs, once it's about 3, it pauses the list and goes there. A Ninja Rank up refills it to 5, so it goes after that run too. It also goes while the list waits for stamina or for a task to open.
+- It fights until the game says there's no stamina left, then taps **No**, or **Yes** for a pearl when you allowed one. Then it goes back to the list.
+- Each fight is against the opponent with the most Points. If they're tied, it picks one at random.
+- Auto is off at the start of every Phantom Castle fight, so AFKage turns it on, then turns Ninjutsu on and Secret Techniques off.
+- If 2 fights in a row are lost, or the event has ended, Phantom Castle is off until you press **Run** again. The rest of the list carries on.
+- The panel shows about how much stamina there is and when the next visit is due. The first visit after you press **Run** checks it in the game.
+
 ### Pill and pearl caps
 
 - The caps are for the whole task, so starting the list again never gives it more.
@@ -301,8 +325,8 @@ The right side says what happened and what to do next. Your list and every task'
 
 ### v1.2
 
+- **Phantom Castle** is in: it plays your Phantom Castle stamina between runs, with its own Ninja Pearl caps.
 - **The swap leader trick with Copy Captain.**
-- **Phantom Castle** when it returns.
 
 ### v2: Custom Manual
 
