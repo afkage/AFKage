@@ -24,7 +24,7 @@ Set up a To-Do list, press **Run** and go do something else. It farms Emergency 
 ### Task types
 
 - **Farm a stage:** Emergency Missions (Weekly, Impact and Event tabs), Trials, and Story Normal or Hard by number.
-- **Limit Break:** farms one element's materials in order: Getting Rich Quick, Scrolls, Ramen, then Trials.
+- **Limit Break:** farms one element's materials in order: Scrolls, Ramen, then Trials.
 - **Story push:** clears everything not cleared yet: Story, Story Hard, Gaiden, then Gaiden Hard.
 - **Daily:** the Daily Missions, once a game day.
 - **Ninja Road:** plays the Road map by map with your three Ninja Road teams, a plan per map, Retreat and claim at the end, and the next Road after that. See [Ninja Road](#ninja-road).
