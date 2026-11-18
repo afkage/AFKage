@@ -237,11 +237,12 @@ The **Phantom Castle** panel is on the right side of the To-Do tab, under the pi
 
 How it works:
 
-- Phantom Castle stamina comes back 1 every 30 minutes, up to 5. AFKage works out how much has built up, and between runs, once it's about 3, it pauses the list and goes there. A Ninja Rank up refills it to 5, so it goes after that run too. It also goes while the list waits for stamina or for a task to open.
+- Phantom Castle stamina comes back 1 every 30 minutes, up to 5. AFKage works out how much has built up, and between runs, once it's about 3, it pauses the list and goes there. A Ninja Rank up refills it to 5, so it goes after that run too. While the list waits for stamina or for a task to open, it goes with even 1, so there's always something to do.
 - It fights until the game says there's no stamina left, then taps **No**, or **Yes** for a pearl when you allowed one. Then it goes back to the list.
 - Each fight is against the opponent with the most Points. If they're tied, it picks one at random.
 - Auto is off at the start of every Phantom Castle fight, so AFKage turns it on, then turns Ninjutsu on and Secret Techniques off.
-- If 2 fights in a row are lost, or the event has ended, Phantom Castle is off until you press **Run** again. The rest of the list carries on.
+- A lost fight still earns points, so it keeps fighting until the stamina is gone, however many are lost.
+- If the event has ended, Phantom Castle is off until you press **Run** again. The rest of the list carries on.
 - The panel shows about how much stamina there is and when the next visit is due. The first visit after you press **Run** checks it in the game.
 
 ### Pill and pearl caps
